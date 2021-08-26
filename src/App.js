@@ -2,6 +2,7 @@
 const nombre = document.querySelector("#nombre-input");
 const edad = document.querySelector("#edad-input");
 const genero = document.querySelector("#genero-input");
+const hora = document.querySelector("#hora-input");
 const form = document.querySelector("#saludador-form");
 
 form.addEventListener("submit", event => {
@@ -24,7 +25,12 @@ form.addEventListener("submit", event => {
         mensaje = mensaje + hombreJoven;
       }
   }
-    alert(mensaje + nombre.value);
+  if(hora.value<12){
+      mensajef = mensaje +  "Buenos dias"
+  }else{
+    mensajef = mensaje +  "Buenos tardes"
+  }
+    alert(mensajef + nombre.value);
 
 });
 
