@@ -6,31 +6,31 @@ const hora = document.querySelector("#hora-input");
 const form = document.querySelector("#saludador-form");
 
 form.addEventListener("submit", event => {
-    mensaje = "Hola ";
-    hombreJoven = "joven ";
-    hombreAdulto = "señor ";
-    mujerJoven = "señorita ";
-    mujerAdulta = "señora ";
+    mensaje = "Hola, ";
+    hombreJoven = " joven ";
+    hombreAdulto = " señor ";
+    mujerJoven = " señorita ";
+    mujerAdulta = " señora ";
 
   if(edad.value>30){
       if(genero.value ="Mujer"){
-        mensaje = mensaje + mujerAdulta;
+        mensajeg =  mujerAdulta;
       }else{
-        mensaje = mensaje + hombreAdulto;
+        mensajeg = hombreAdulto;
       }
   }else{
     if(genero.value = "Mujer"){
-        mensaje = mensaje + mujerJoven;
+        mensajeg = mujerJoven;
       }else{
-        mensaje = mensaje + hombreJoven;
+        mensajeg = hombreJoven;
       }
   }
   if(hora.value<"12:00"){
-      mensajef = mensaje +  "Buenos dias"
+      mensajeh = " Buenos dias "
   }else{
-    mensajef = mensaje +  "Buenos tardes"
+    mensajeh = " Buenos tardes "
   }
-    alert(mensajef + nombre.value);
+    alert(mensaje + mensajeh + mensajeg + nombre.value);
 
 });
 
