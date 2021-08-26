@@ -25,7 +25,7 @@ form.addEventListener("submit", event => {
         mensaje = mensaje + hombreJoven;
       }
   }
-  if(hora.value<12){
+  if(hora.value<"12:00"){
       mensajef = mensaje +  "Buenos dias"
   }else{
     mensajef = mensaje +  "Buenos tardes"
