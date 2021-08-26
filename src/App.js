@@ -3,7 +3,6 @@ const nombre = document.querySelector("#nombre-input");
 const edad = document.querySelector("#edad-input");
 const genero = document.querySelector("#genero-input");
 const hora = document.querySelector("#hora-input");
-const robot = document.querySelector("#robot");
 const form = document.querySelector("#saludador-form");
 
 form.addEventListener("submit", event => {
@@ -31,7 +30,7 @@ form.addEventListener("submit", event => {
   }else{
     mensajeh = " Buenos tardes "
   }
-    alert(mensaje + mensajeh + mensajeg + nombre.value+ robot);
+    alert(mensaje + mensajeh + mensajeg + nombre.value);
 
 });
 
