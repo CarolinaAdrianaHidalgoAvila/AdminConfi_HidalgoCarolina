@@ -12,13 +12,13 @@ form.addEventListener("submit", event => {
     mujerAdulta = "señora ";
 
   if(edad.value>30){
-      if(genero.value == "Mujer"){
+      if(genero.value == Mujer){
         mensaje = mensaje + mujerAdulta;
       }else{
         mensaje = mensaje + hombreAdulto;
       }
   }else{
-    if(genero.value == "Mujer"){
+    if(genero.value == Mujer){
         mensaje = mensaje + mujerJoven;
       }else{
         mensaje = mensaje + hombreJoven;
