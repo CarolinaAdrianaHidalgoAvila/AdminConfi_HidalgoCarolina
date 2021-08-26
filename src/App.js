@@ -27,8 +27,10 @@ form.addEventListener("submit", event => {
   }
   if(hora.value<"12:00"){
       mensajeh = " Buenos dias "
-  }else{
+  }else if (hora.value<"19:00"){
     mensajeh = " Buenos tardes "
+  }else{
+    mensajeh = " Buenos noches "
   }
     alert(mensaje + mensajeh + mensajeg + nombre.value);
 
