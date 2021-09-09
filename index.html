@@ -1,29 +1,13 @@
 <html>
   <body>
-    <h1>Hola</h1>
-    <img src="asistente-robot.gif">    
-    <form id="saludador-form">
-      <label for="nombre-input">Tu nombre:</label>
-      <input type="text" id="nombre-input" /><br>
-      <label for="nombre-input">Tu edad:</label>
-      <input type="text" id="edad-input" /><br>
-      <p>Genero:
-        <input type="radio" id="genero-input" value="Hombre">Hombre
-        <input type="radio" id="genero-input" value="Mujer" >Mujer
-      </p>
-      <p>
-    <!-- Se utilizo este metodo para mostrar que si funciona -->
-      Hora: <input type="time" id="hora-input"><br>
-      <select id="Idiomas">
-        <option>Español</option>
-        <option>Ingles</option>
-        <option>Frances</option>
-        <option>Ruso</option>
-        <option>Portugues</option>
-        <option>Chino mandarín</option>
-      </select>
-      <input type="submit" value="Saludar" />
+    <h1>Registrar Tareas</h1>
+    <form id="Tareas-form">
+      <label for="tarea-input">Tarea:</label>
+      <input type="text" id="tarea-input" /><br>
+      
+      <input type="submit" value="Add" />
     </form>
+    <p id="show-tarea"></p>
     <script src="./src/index.js"></script>
   </body>
 </html>
